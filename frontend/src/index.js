@@ -23,7 +23,8 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 // core components
 import Admin from "layouts/Admin.js";
 import RTL from "layouts/RTL.js";
-
+import Login from "components/Login/Login.js";
+import Registration from "components/Registration/Registration.js";
 import "assets/css/material-dashboard-react.css?v=1.8.0";
 
 const hist = createBrowserHistory();
@@ -33,6 +34,8 @@ ReactDOM.render(
     <Switch>
       <Route path="/admin" component={Admin} />
       <Route path="/rtl" component={RTL} />
+      <Route path="/Login" component={Login} />
+      <Route path="/Registration" component={Registration} />
       <Redirect from="/" to="/admin/dashboard" />
     </Switch>
   </Router>,

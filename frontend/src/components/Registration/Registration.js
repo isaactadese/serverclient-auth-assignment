@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import { useHistory } from "react-router-dom";
-import { Button } from "../components/Buttons";
-import { useAppContext } from "../libs/contextLib";
-import { useFormFields } from "../libs/hooksLib";
-import { onError } from "../libs/errorLib";
+import Button from "react-bootstrap/Button";
+import { useAppContext } from "../../libs/contextLib";
+import { useFormFields } from "../../libs/hooksLib";
+import { onError } from "../../libs/errorLib";
 import "./Registration.css";
 
 export default function Registration() {
@@ -16,7 +16,7 @@ export default function Registration() {
   });
   const history = useHistory();
   const [newUser, setNewUser] = useState(null);
-  const { userHasAuthenticated } = useAppContext();
+  //const { userHasAuthenticated } = useAppContext();
   const [isLoading, setIsLoading] = useState(false);
 
   function validateForm() {

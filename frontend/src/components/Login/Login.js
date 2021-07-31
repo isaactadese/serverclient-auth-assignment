@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
-import { Button } from "../components/Buttons";
+import Button from "react-bootstrap/Button";
 import "./Login.css";
 
 export default function Login() {
@@ -39,7 +39,6 @@ export default function Login() {
   	block
   	size="lg"
   	type="submit"
-  	isLoading={isLoading}
   	disabled={!validateForm()}
 	>
   Login

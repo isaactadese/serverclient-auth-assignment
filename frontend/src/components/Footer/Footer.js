@@ -37,6 +37,16 @@ export default function Footer(props) {
                 Blog
               </a>
             </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a href="../../Login" className={classes.block}>
+                Login
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a href="../../Registration" className={classes.block}>
+                Registration
+              </a>
+            </ListItem>
           </List>
         </div>
         <p className={classes.right}>
